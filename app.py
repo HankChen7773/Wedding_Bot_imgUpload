@@ -80,14 +80,14 @@ def handle_message(event):
         ext = 'mp4'
         line_bot_api.reply_message(
                 event.reply_token,
-                TextSendMessage(text='影片無法投影在相片牆'))
+                TextSendMessage(text='您上傳的影片無法投影在相片牆'))
     elif isinstance(event.message, AudioMessage):
         ext = 'm4a'
         line_bot_api.reply_message(
                 event.reply_token,
-                TextSendMessage(text='聲音無法投影在相片牆'))
+                TextSendMessage(text='您上傳的影片聲音無法投影在相片牆'))
     elif isinstance(event.message, TextMessage):
-        if event.message.text == "小幫手抽照片":
+        if event.message.text == "小幫手請抽出幸運兒":
             imageSize = "h"
             client = ImgurClient(client_id, client_secret)
             images = client.get_album_images(album_id)
@@ -109,6 +109,12 @@ def handle_message(event):
                 ])
 
             return 0
+        # elif event.message.text == "婚禮資訊":
+        #     line_bot_api.reply_message(
+        #         event.reply_token, [
+        #             TextSendMessage(text=' yoyo'),
+        #             TextSendMessage(text='請傳一張圖片給我')
+        #         ])
         else:
             # line_bot_api.reply_message(
             #     event.reply_token, [
