@@ -87,7 +87,7 @@ def handle_message(event):
         ext = 'm4a'
         line_bot_api.reply_message(
                 event.reply_token,
-                TextSendMessage(text='您上傳的影片聲音無法投影在相片牆'))
+                TextSendMessage(text='您上傳的聲音訊息無法投影在相片牆'))
     elif isinstance(event.message, TextMessage):
         if event.message.text == "小幫手請抽出幸運兒":
             imageSize = "h"
