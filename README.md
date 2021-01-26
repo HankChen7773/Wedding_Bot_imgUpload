@@ -1,4 +1,6 @@
-# line-bot-imgur-tutorial
+# Hank & jasmine Wedding Bot!
+<!-- 引用以下作者sample code -->
+<!-- # line-bot-imgur-tutorial
 
 透過 imgur api 製作簡單 line bot
 
@@ -90,4 +92,4 @@ client = ImgurClient(client_id, client_secret, access_token, refresh_token)
 
 ## License
 
-MIT license
+MIT license -->
