@@ -1,0 +1,475 @@
+{
+    "type": "carousel",
+    "contents": [
+        {
+            "type": "bubble",
+            "hero": {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                    {
+                        "type": "box",
+                        "layout": "vertical",
+                        "contents": [
+                            {
+                                "type": "image",
+                                "url": "https://vos.line-scdn.net/card-type-message-image/003rebph/1606194716672-eIltoB3F9s9N5Q1j83chifixMyyv2FhfThesDLpJNtWOfrPPrl",
+                                "size": "full",
+                                "aspectMode": "cover",
+                                "aspectRatio": "1.54:1"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "body": {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                    {
+                        "type": "text",
+                        "text": "開車去婚禮",
+                        "size": "xl",
+                        "color": "#353a40",
+                        "weight": "bold",
+                        "wrap": true
+                    },
+                    {
+                        "type": "box",
+                        "layout": "baseline",
+                        "contents": [
+                            {
+                                "type": "icon",
+                                "url": "https://static.line-scdn.net/biz-app/edge/manager/img/cardtypemessage/icon_map_marker_alt.png",
+                                "size": "lg",
+                                "offsetTop": "4px"
+                            },
+                            {
+                                "type": "text",
+                                "text": "115台北市南港區忠孝東路七段359號 (City Link B 棟)",
+                                "size": "sm",
+                                "color": "#5b82db",
+                                "wrap": true,
+                                "margin": "md"
+                            }
+                        ],
+                        "margin": "md",
+                        "action": {
+                            "type": "uri",
+                            "uri": "https://www.google.com/maps/search/?api=1&query=25.0524855,121.6065925"
+                        }
+                    }
+                ]
+            },
+            "footer": {
+                "type": "box",
+                "layout": "vertical",
+                "spacing": "sm",
+                "contents": [
+                    {
+                        "type": "button",
+                        "style": "primary",
+                        "height": "sm",
+                        "action": {
+                            "type": "uri",
+                            "label": "指定停車場資訊",
+                            "uri": "http://www.courtyardtaipei.com.tw/zh-TW/?Psn=10721"
+                        },
+                        "color": "#29cf5b"
+                    },
+                    {
+                        "type": "button",
+                        "style": "primary",
+                        "height": "sm",
+                        "action": {
+                            "type": "message",
+                            "label": "指定停車場免費說明",
+                            "text": "停到六福萬怡酒店指定停車場，婚禮期間停車費用免費"
+                        },
+                        "color": "#29cf5b"
+                    }
+                ]
+            },
+            "action": {
+                "type": "uri",
+                "uri": "http://www.courtyardtaipei.com.tw/zh-TW/?Psn=10721"
+            }
+        },
+        {
+            "type": "bubble",
+            "hero": {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                    {
+                        "type": "box",
+                        "layout": "vertical",
+                        "contents": [
+                            {
+                                "type": "image",
+                                "url": "https://vos.line-scdn.net/card-type-message-image/003rebph/1606192513572-hT2Tt9OLtxqANWY3ZmpnTgwtjbvLBQWTr6cJFTo5LDkSU5QIgi",
+                                "size": "full",
+                                "aspectMode": "cover",
+                                "aspectRatio": "1.54:1"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "body": {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                    {
+                        "type": "text",
+                        "text": "搭捷運去婚禮",
+                        "size": "xl",
+                        "color": "#353a40",
+                        "weight": "bold",
+                        "wrap": true
+                    },
+                    {
+                        "type": "box",
+                        "layout": "baseline",
+                        "contents": [
+                            {
+                                "type": "icon",
+                                "url": "https://static.line-scdn.net/biz-app/edge/manager/img/cardtypemessage/icon_map_marker_alt.png",
+                                "size": "lg",
+                                "offsetTop": "4px"
+                            },
+                            {
+                                "type": "text",
+                                "text": "捷運「南港站」下車",
+                                "size": "sm",
+                                "color": "#5b82db",
+                                "wrap": true,
+                                "margin": "md"
+                            }
+                        ],
+                        "margin": "md",
+                        "action": {
+                            "type": "uri",
+                            "uri": "https://www.google.com/maps/search/?api=1&query=25.0524855,121.6065925"
+                        }
+                    }
+                ]
+            },
+            "footer": {
+                "type": "box",
+                "layout": "vertical",
+                "spacing": "sm",
+                "contents": [
+                    {
+                        "type": "button",
+                        "style": "primary",
+                        "height": "sm",
+                        "action": {
+                            "type": "uri",
+                            "label": "前往Google map",
+                            "uri": "https://goo.gl/maps/HcNMbPTEYNY6asTD7"
+                        },
+                        "color": "#29cf5b"
+                    },
+                    {
+                        "type": "button",
+                        "style": "primary",
+                        "height": "sm",
+                        "action": {
+                            "type": "uri",
+                            "label": "捷運路線圖",
+                            "uri": "https://web.metro.taipei/img/all/metrotaipeimap.jpg"
+                        },
+                        "color": "#29cf5b"
+                    }
+                ]
+            },
+            "action": {
+                "type": "uri",
+                "uri": "https://goo.gl/maps/HcNMbPTEYNY6asTD7"
+            }
+        },
+        {
+            "type": "bubble",
+            "hero": {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                    {
+                        "type": "box",
+                        "layout": "vertical",
+                        "contents": [
+                            {
+                                "type": "image",
+                                "url": "https://vos.line-scdn.net/card-type-message-image/003rebph/1606193002241-K1V0Y00PHSjMQCSW816vXOHcXPQZekoEZzEIgcJLfJwPYmK363",
+                                "size": "full",
+                                "aspectMode": "cover",
+                                "aspectRatio": "1.54:1"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "body": {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                    {
+                        "type": "text",
+                        "text": "搭公車去婚禮",
+                        "size": "xl",
+                        "color": "#353a40",
+                        "weight": "bold",
+                        "wrap": true
+                    },
+                    {
+                        "type": "box",
+                        "layout": "baseline",
+                        "contents": [
+                            {
+                                "type": "icon",
+                                "url": "https://static.line-scdn.net/biz-app/edge/manager/img/cardtypemessage/icon_map_marker_alt.png",
+                                "size": "lg",
+                                "offsetTop": "4px"
+                            },
+                            {
+                                "type": "text",
+                                "text": "搭乘公車至「南港行政中心站」下車，由興華路往市民大道方向步行5分鐘即抵達本飯店。",
+                                "size": "sm",
+                                "color": "#5b82db",
+                                "wrap": true,
+                                "margin": "md"
+                            }
+                        ],
+                        "margin": "md",
+                        "action": {
+                            "type": "uri",
+                            "uri": "https://www.google.com/maps/search/?api=1&query=25.0524855,121.6065925"
+                        }
+                    }
+                ]
+            },
+            "footer": {
+                "type": "box",
+                "layout": "vertical",
+                "spacing": "sm",
+                "contents": [
+                    {
+                        "type": "button",
+                        "style": "primary",
+                        "height": "sm",
+                        "action": {
+                            "type": "uri",
+                            "label": "南港行政中心(向西)站牌資訊",
+                            "uri": "https://ebus.gov.taipei/Stop/RoutesOfStop?Stopid=1157900160"
+                        },
+                        "color": "#29cf5b"
+                    },
+                    {
+                        "type": "button",
+                        "style": "primary",
+                        "height": "sm",
+                        "action": {
+                            "type": "uri",
+                            "label": "南港行政中心(向東)站牌資訊",
+                            "uri": "https://ebus.gov.taipei/Stop/RoutesOfStop?Stopid=1157900120"
+                        },
+                        "color": "#29cf5b"
+                    }
+                ]
+            },
+            "action": {
+                "type": "uri",
+                "uri": "https://ebus.gov.taipei/Stop/RoutesOfStop?Stopid=1157900160"
+            }
+        },
+        {
+            "type": "bubble",
+            "hero": {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                    {
+                        "type": "box",
+                        "layout": "vertical",
+                        "contents": [
+                            {
+                                "type": "image",
+                                "url": "https://vos.line-scdn.net/card-type-message-image/003rebph/1606194197609-d42eMSs0Fjsh9hk7ZwgagOGa75W7KRSaGwyJzeTC0ycFIsyJ3j",
+                                "size": "full",
+                                "aspectMode": "cover",
+                                "aspectRatio": "1.54:1"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "body": {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                    {
+                        "type": "text",
+                        "text": "搭火車去婚禮",
+                        "size": "xl",
+                        "color": "#353a40",
+                        "weight": "bold",
+                        "wrap": true
+                    },
+                    {
+                        "type": "box",
+                        "layout": "baseline",
+                        "contents": [
+                            {
+                                "type": "icon",
+                                "url": "https://static.line-scdn.net/biz-app/edge/manager/img/cardtypemessage/icon_map_marker_alt.png",
+                                "size": "lg",
+                                "offsetTop": "4px"
+                            },
+                            {
+                                "type": "text",
+                                "text": "台鐵至「南港站」下車，由南出口（南2‧忠孝東路），前往至B棟即抵達「台北六福萬怡酒店」。",
+                                "size": "sm",
+                                "color": "#5b82db",
+                                "wrap": true,
+                                "margin": "md"
+                            }
+                        ],
+                        "margin": "md",
+                        "action": {
+                            "type": "uri",
+                            "uri": "https://www.google.com/maps/search/?api=1&query=25.0524855,121.6065925"
+                        }
+                    }
+                ]
+            },
+            "footer": {
+                "type": "box",
+                "layout": "vertical",
+                "spacing": "sm",
+                "contents": [
+                    {
+                        "type": "button",
+                        "style": "primary",
+                        "height": "sm",
+                        "action": {
+                            "type": "uri",
+                            "label": "台鐵時刻表查詢",
+                            "uri": "https://www.railway.gov.tw/tra-tip-web/tip/tip001/tip112/querybytime"
+                        },
+                        "color": "#29cf5b"
+                    },
+                    {
+                        "type": "button",
+                        "style": "primary",
+                        "height": "sm",
+                        "action": {
+                            "type": "uri",
+                            "label": "台鐵線上訂票",
+                            "uri": "https://www.railway.gov.tw/tra-tip-web/tip/tip001/tip121/query"
+                        },
+                        "color": "#29cf5b"
+                    }
+                ]
+            },
+            "action": {
+                "type": "uri",
+                "uri": "https://www.railway.gov.tw/tra-tip-web/tip/tip001/tip112/querybytime"
+            }
+        },
+        {
+            "type": "bubble",
+            "hero": {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                    {
+                        "type": "box",
+                        "layout": "vertical",
+                        "contents": [
+                            {
+                                "type": "image",
+                                "url": "https://vos.line-scdn.net/card-type-message-image/003rebph/1606194392977-yXrE5ENQZE0JAMrw3jcV4ZCsjW0kN4aZRo5b3xU4AmGkMhw8Bx",
+                                "size": "full",
+                                "aspectMode": "cover",
+                                "aspectRatio": "1.54:1"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "body": {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                    {
+                        "type": "text",
+                        "text": "搭高鐵去婚禮",
+                        "size": "xl",
+                        "color": "#353a40",
+                        "weight": "bold",
+                        "wrap": true
+                    },
+                    {
+                        "type": "box",
+                        "layout": "baseline",
+                        "contents": [
+                            {
+                                "type": "icon",
+                                "url": "https://static.line-scdn.net/biz-app/edge/manager/img/cardtypemessage/icon_map_marker_alt.png",
+                                "size": "lg",
+                                "offsetTop": "4px"
+                            },
+                            {
+                                "type": "text",
+                                "text": "高鐵至「南港站」下車，由南出口（南1‧忠孝東路），前往至B棟即抵達「台北六福萬怡酒店」。",
+                                "size": "sm",
+                                "color": "#5b82db",
+                                "wrap": true,
+                                "margin": "md"
+                            }
+                        ],
+                        "margin": "md",
+                        "action": {
+                            "type": "uri",
+                            "uri": "https://www.google.com/maps/search/?api=1&query=25.0524855,121.6065925"
+                        }
+                    }
+                ]
+            },
+            "footer": {
+                "type": "box",
+                "layout": "vertical",
+                "spacing": "sm",
+                "contents": [
+                    {
+                        "type": "button",
+                        "style": "primary",
+                        "height": "sm",
+                        "action": {
+                            "type": "uri",
+                            "label": "高鐵時刻表查詢",
+                            "uri": "https://www.thsrc.com.tw/ArticleContent/a3b630bb-1066-4352-a1ef-58c7b4e8ef7c"
+                        },
+                        "color": "#29cf5b"
+                    },
+                    {
+                        "type": "button",
+                        "style": "primary",
+                        "height": "sm",
+                        "action": {
+                            "type": "uri",
+                            "label": "高鐵線上訂票",
+                            "uri": "https://irs.thsrc.com.tw/IMINT/?locale=tw"
+                        },
+                        "color": "#29cf5b"
+                    }
+                ]
+            },
+            "action": {
+                "type": "uri",
+                "uri": "https://www.thsrc.com.tw/ArticleContent/a3b630bb-1066-4352-a1ef-58c7b4e8ef7c"
+            }
+        }
+    ]
+}

@@ -1,0 +1,119 @@
+{
+    "type": "carousel",
+    "contents": [
+        {
+            "type": "bubble",
+            "hero": {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                    {
+                        "type": "box",
+                        "layout": "vertical",
+                        "contents": [
+                            {
+                                "type": "image",
+                                "url": "https://vos.line-scdn.net/card-type-message-image/003rebph/1610966111929-z7Ywb1VBuqoU6EkhsCm98Tsv7ZF4KhWDKGZ3LZVqAtJOcUjsyi",
+                                "size": "full",
+                                "aspectMode": "cover",
+                                "aspectRatio": "1.54:1"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "body": {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                    {
+                        "type": "text",
+                        "text": "婚禮時間",
+                        "size": "xl",
+                        "color": "#353a40",
+                        "weight": "bold",
+                        "wrap": true
+                    },
+                    {
+                        "type": "box",
+                        "layout": "baseline",
+                        "contents": [
+                            {
+                                "type": "icon",
+                                "url": "https://static.line-scdn.net/biz-app/edge/manager/img/cardtypemessage/icon_clock.png",
+                                "size": "lg",
+                                "offsetTop": "4px"
+                            },
+                            {
+                                "type": "text",
+                                "text": "11:00入席，12:00開宴 ",
+                                "size": "sm",
+                                "color": "#495057",
+                                "wrap": true,
+                                "margin": "md"
+                            }
+                        ],
+                        "margin": "md"
+                    }
+                ]
+            }
+        },
+        {
+            "type": "bubble",
+            "hero": {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                    {
+                        "type": "box",
+                        "layout": "vertical",
+                        "contents": [
+                            {
+                                "type": "image",
+                                "url": "https://vos.line-scdn.net/card-type-message-image/003rebph/1610965604907-g9QzsYyQZPynYx8j0IUJtobqwtuZkYF1yExSCMihuTYdGLjCba",
+                                "size": "full",
+                                "aspectMode": "cover",
+                                "aspectRatio": "1.54:1"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "body": {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                    {
+                        "type": "text",
+                        "text": "婚禮地點",
+                        "size": "xl",
+                        "color": "#353a40",
+                        "weight": "bold",
+                        "wrap": true
+                    },
+                    {
+                        "type": "box",
+                        "layout": "baseline",
+                        "contents": [
+                            {
+                                "type": "icon",
+                                "url": "https://static.line-scdn.net/biz-app/edge/manager/img/cardtypemessage/icon_map_marker_alt.png",
+                                "size": "lg",
+                                "offsetTop": "4px"
+                            },
+                            {
+                                "type": "text",
+                                "text": "台北市南港區忠孝東路七段359號X樓 (幸福廳)",
+                                "size": "sm",
+                                "color": "#495057",
+                                "wrap": true,
+                                "margin": "md"
+                            }
+                        ],
+                        "margin": "md"
+                    }
+                ]
+            }
+        }
+    ]
+}

@@ -14,6 +14,8 @@ import tempfile, os
 from config import client_id, client_secret, album_id, access_token, refresh_token, line_channel_access_token, \
     line_channel_secret
 
+import json
+
 app = Flask(__name__)
 
 line_bot_api = LineBotApi(line_channel_access_token)
@@ -109,12 +111,23 @@ def handle_message(event):
                 ])
 
             return 0
-        # elif event.message.text == "婚禮資訊":
+        #測試msg
+        # elif event.message.text == '婚禮資訊':
+        #     with open('./asset/weddingInfo.json','r') as winfo:
+        #         weddingInfo = json.load(winfo)
+        #         print(weddingInfo)
+        #     flex_message = FlexSendMessage(
+        #             alt_text='婚禮資訊',
+        #             contents = weddingInfo
+        #         )
+        #     print(flex_message)
         #     line_bot_api.reply_message(
         #         event.reply_token, [
+        #             flex_message,
         #             TextSendMessage(text=' yoyo'),
         #             TextSendMessage(text='請傳一張圖片給我')
         #         ])
+        #測試msg
         else:
             # line_bot_api.reply_message(
             #     event.reply_token, [
@@ -123,6 +136,33 @@ def handle_message(event):
             #     ])
             return 0
 
+@handler.add(PostbackEvent)
+def handle_postback(event):
+    print(event)
+    if(event.postback.data=='action=weddingInfo'):
+        with open('./asset/weddingInfo.json','r') as winfo:
+            weddingInfo = json.load(winfo)
+        flex_message = FlexSendMessage(
+                alt_text = '婚禮資訊',
+                contents = weddingInfo
+            )
+        line_bot_api.reply_message(
+            event.reply_token, [
+                    flex_message
+                ])
+        return 0
+    elif(event.postback.data=='action=trafficInfo'):
+        with open('./asset/trafficInfo.json','r') as trffo:
+            trafficInfo = json.load(trffo)
+        flex_message = FlexSendMessage(
+                alt_text = '交通資訊',
+                contents = trafficInfo
+            )
+        line_bot_api.reply_message(
+            event.reply_token, [
+                    flex_message
+                ])
+        return 0
 
 if __name__ == '__main__':
     app.run()
