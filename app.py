@@ -71,11 +71,11 @@ def handle_message(event):
             print(path)
             line_bot_api.reply_message(
                 event.reply_token,
-                TextSendMessage(text='上傳成功'))
+                TextSendMessage(text='您的照片上傳成功，請保留相片至婚禮結束，謝謝您!'))
         except:
             line_bot_api.reply_message(
                 event.reply_token,
-                TextSendMessage(text='上傳失敗'))
+                TextSendMessage(text='您的照片上傳失敗，請重新試試!'))
         return 0
 
     elif isinstance(event.message, VideoMessage):
@@ -89,7 +89,7 @@ def handle_message(event):
                 event.reply_token,
                 TextSendMessage(text='您上傳的聲音訊息無法投影在相片牆'))
     elif isinstance(event.message, TextMessage):
-        if event.message.text == "小幫手請抽出幸運兒":
+        if event.message.text == "小幫手請抽出一位幸運兒":
             imageSize = "h"
             client = ImgurClient(client_id, client_secret)
             images = client.get_album_images(album_id)
@@ -107,7 +107,7 @@ def handle_message(event):
             line_bot_api.reply_message(
                 event.reply_token, [
                     image_message,
-                    TextSendMessage(text='恭喜'+ imgurName + '中獎')
+                    TextSendMessage(text='恭喜'+ imgurName + '幸運中獎!!!')
                 ])
 
             return 0
