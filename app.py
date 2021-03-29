@@ -90,7 +90,7 @@ def handle_message(event):
                 event.reply_token,
                 TextSendMessage(text='您上傳的聲音訊息無法投影在相片牆'))
     elif isinstance(event.message, TextMessage):
-        if event.message.text == "小幫手請抽出一位幸運兒":
+        if event.message.text == "小幫手請抽出兩位幸運兒":
             imageSize = "h"
             client = ImgurClient(client_id, client_secret)
             images = client.get_album_images(album_id)
