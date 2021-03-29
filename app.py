@@ -1,4 +1,5 @@
 import random
+import time
 from flask import Flask, request, abort
 from imgurpython import ImgurClient
 
@@ -93,24 +94,75 @@ def handle_message(event):
             imageSize = "h"
             client = ImgurClient(client_id, client_secret)
             images = client.get_album_images(album_id)
-            index = random.randint(0, len(images) - 1)
-            imgurName = images[index].title
-            print(imgurName)
-            imgurLink = images[index].link
-            print(imgurLink)
-            linkIndex = imgurLink.find('.jpg')
-            trgUrl = imgurLink[:linkIndex] + imageSize + imgurLink[linkIndex:]
-            image_message = ImageSendMessage(
-                original_content_url=trgUrl,
-                preview_image_url=trgUrl
-            )
+            index = [0,0]
+            imgurNameA = "A"
+            imgurNameB = "A"
+            while imgurNameA == imgurNameB:
+                index = [random.randint(0, len(images) - 1) for _ in range(2)]
+                imgurNameA = images[index[0]].title
+                imgurNameB = images[index[1]].title
+                print(index, imgurNameA, imgurNameB)
+                imgurNameList = [imgurNameA, imgurNameB]
+                imgurNameListIndex = 0
+                image_message_list = []
+            for i in index:
+                imgurLink = images[i].link
+                linkIndex = imgurLink.find('.jpg')
+                trgUrl = imgurLink[:linkIndex] + imageSize + imgurLink[linkIndex:]
+                # image_message_list.append(ImageSendMessage(
+                #     original_content_url=trgUrl,
+                #     preview_image_url=trgUrl
+                # ))
+                image_message_list.append(FlexSendMessage(
+                    alt_text = 'hello',
+                    contents = {
+                        "type": "bubble",
+                        "hero": {
+                            "type": "image",
+                            "url": trgUrl,
+                            "size": "full",
+                            "aspectRatio": "30:30",
+                            "aspectMode": "cover"
+                        },
+                        "body": {
+                            "type": "box",
+                            "layout": "vertical",
+                            "contents": [
+                                {
+                                "type": "text",
+                                "text": imgurNameList[imgurNameListIndex],
+                                "size": "xl",
+                                "weight": "bold",
+                                "color": "#0000E3"
+                                },
+                                {
+                                "type": "text",
+                                "text": '恭喜幸運中獎!!!',
+                                "size": "xl",
+                                "weight": "bold",
+                                "color": "#FF0000"
+                                }
+                            ]
+                        }
+                    }
+                ))
+                imgurNameListIndex += 1
+            print(image_message_list)
+            # line_bot_api.reply_message(
+            #     event.reply_token, [
+            #         image_message_list[0],
+            #         TextSendMessage(text='恭喜{'+ imgurNameA + '}幸運中獎!!!'),
+            #         image_message_list[1],
+            #         TextSendMessage(text='恭喜{'+ imgurNameB + '}幸運中獎!!!'),
+            #     ])
             line_bot_api.reply_message(
                 event.reply_token, [
-                    image_message,
-                    TextSendMessage(text='恭喜'+ imgurName + '幸運中獎!!!')
+                    image_message_list[0],
+                    image_message_list[1],
                 ])
 
             return 0
+
         #測試msg
         # elif event.message.text == '婚禮資訊':
         #     with open('./asset/weddingInfo.json','r') as winfo:
