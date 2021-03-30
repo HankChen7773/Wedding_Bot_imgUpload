@@ -131,7 +131,7 @@ def handle_message(event):
                                 {
                                 "type": "text",
                                 "text": imgurNameList[imgurNameListIndex],
-                                "size": "xl",
+                                "size": "3xl",
                                 "weight": "bold",
                                 "color": "#0000E3"
                                 },
