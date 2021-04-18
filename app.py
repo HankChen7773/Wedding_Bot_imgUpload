@@ -12,7 +12,7 @@ from linebot.exceptions import (
 from linebot.models import *
 
 import tempfile, os
-from config import client_id, client_secret, album_id, access_token, refresh_token, line_channel_access_token, \
+from config import client_id, client_secret, album_id, album_id_lucky, access_token, refresh_token, line_channel_access_token, \
     line_channel_secret
 
 import json
@@ -93,7 +93,7 @@ def handle_message(event):
         if event.message.text == "啾咪神之手":
             imageSize = "h"
             client = ImgurClient(client_id, client_secret)
-            images = client.get_album_images(album_id)
+            images = client.get_album_images(album_id_lucky)
             index = [0,0]
             imgurNameA = "A"
             imgurNameB = "A"
